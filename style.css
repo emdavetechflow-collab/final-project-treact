@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", system-ui;
+}
+
+body {
   color: #243e63;
 }
 
@@ -1059,4 +1062,41 @@ FOOTER ↓
 #footer .footer__bottom p {
   color: white !important;
   font-size: 15px !important;
+}
+
+/* MOBILE MENU BACKDROP */
+.menu__backdrop {
+  display: none; /* fully removed when closed */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 200;
+  padding: 32px;
+  pointer-events: none; /* cannot block page when closed */
+}
+
+/* MENU OPEN STATE */
+.menu--open .menu__backdrop {
+  display: block; /* fully visible when open */
+  pointer-events: auto; /* clickable */
+}
+
+/* MOBILE MENU LINKS */
+.menu__links {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* CLOSE BUTTON */
+.btn__menu--close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: transparent;
+  border: none;
 }

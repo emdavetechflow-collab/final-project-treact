@@ -12,7 +12,6 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <script src="script.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -39,6 +38,21 @@
           </button>
         </div>
       </nav>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <img src="assets/close.svg" class="btn__menu--svg" alt="Close Menu" />
+        </button>
+
+        <div class="menu__links">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#blog" class="nav__link">Blog</a>
+          <a href="#pricing" class="nav__link">Pricing</a>
+          <a href="#contact" class="nav__link">Contact Us</a>
+          <a href="#login" class="nav__link">Login</a>
+          <button class="nav__link nav__link--primary">Sign Up</button>
+        </div>
+      </div>
+
       <header>
         <div class="row">
           <div class="header__left">
@@ -488,5 +502,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
